@@ -17,11 +17,25 @@
 }
 
 body {
+  height: 80vh;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+body #rainbow {
+  background-image: linear-gradient(to right, purple, magenta, red, yellow, cyan, purple);
+  background-clip: text;
+  color: transparent;
+  background-size: 500%;
+  background-position: -100%;
+  animation: rainbowText 10s alternate-reverse infinite;
+}
+
+@keyframes rainbowText {
+  to {
+    background-position: 100%;
+  }
+
 }

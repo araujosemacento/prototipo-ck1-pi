@@ -1,7 +1,8 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Besley } from "next/font/google";
+import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const besley = Besley({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Protótipo",
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={(besley.className)}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

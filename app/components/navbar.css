@@ -1,0 +1,7 @@
+div {
+    @apply h-20 w-full border-b-2 flex items-center justify-between p-2;
+}
+
+div li {
+    @apply cursor-pointer p-2;
+}
