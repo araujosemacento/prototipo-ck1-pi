@@ -7,5 +7,5 @@ div ul {
 }
 
 div li {
-    @apply cursor-pointer p-2;
+    @apply cursor-pointer p-2 m-2 border-black transition-all hover:border-white hover:rounded-xl hover:border-b;
 }
